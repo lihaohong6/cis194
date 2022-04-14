@@ -1,6 +1,6 @@
 module Hw4 where
 
-import Data.List (sort, (\\))
+import Data.List ((\\))
 
 fun1o :: [Integer] -> Integer
 fun1o [] = 1

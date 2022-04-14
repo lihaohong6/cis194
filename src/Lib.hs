@@ -9,3 +9,6 @@ fib :: Integer -> Integer
 fib x
   | x <= 2 = 1
   | otherwise = fib(x-1) + fib(x-2)
+
+evenList :: [Integer] -> [Integer]
+evenList list = filter even list
