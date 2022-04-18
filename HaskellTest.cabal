@@ -36,11 +36,14 @@ library
       ExprT
       Parser
       StackVM
+      Hw7
+      Sized
   other-modules:
       Paths_HaskellTest
   hs-source-dirs:
       src
       src/utils
+      src/hw7
   build-depends:
       base >=4.7 && <5
   default-language: Haskell2010
@@ -63,6 +66,7 @@ test-suite HaskellTest-test
   other-modules:
       TestHw1
       TestHw4
+      TestHw7
       Paths_HaskellTest
   hs-source-dirs:
       test

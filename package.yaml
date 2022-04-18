@@ -26,6 +26,7 @@ library:
   source-dirs:
   - src
   - src/utils
+  - src/hw7
 
 
 executables:
