@@ -10,17 +10,17 @@ buildList list num = case drop (num -1) list of
 skips :: [t] -> [[t]]
 skips list = map (buildList list) [1 .. length list]
 
-localMaxima :: [Integer] -> [Integer]
-localMaxima [] = []
-localMaxima [_] = []
-localMaxima [_, _] = []
-localMaxima (a : b : c : xs) =
+localMaximaLong :: [Integer] -> [Integer]
+localMaximaLong [] = []
+localMaximaLong [_] = []
+localMaximaLong [_, _] = []
+localMaximaLong (a : b : c : xs) =
   if a < b && b > c
-    then b : localMaxima (b : c : xs)
-    else localMaxima (b : c : xs)
+    then b : localMaximaLong (b : c : xs)
+    else localMaximaLong (b : c : xs)
 
-localMaxima2 :: [Integer] -> [Integer]
-localMaxima2 list =
+localMaxima :: [Integer] -> [Integer]
+localMaxima list =
   map
     (\(_, b, _) -> b)
     ( filter

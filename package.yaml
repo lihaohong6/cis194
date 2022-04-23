@@ -21,12 +21,14 @@ description:         Please see the README on GitHub at <https://github.com/Gith
 
 dependencies:
 - base >= 4.7 && < 5
+- containers
 
 library:
   source-dirs:
   - src
   - src/utils
   - src/hw7
+  - src/hw8
 
 
 executables:
